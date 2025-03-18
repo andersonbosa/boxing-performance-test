@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class BoxingPerformanceTest {
     public static void main(String[] args) {
-        int tamanho = 10_000_000;
-        Runtime runtime = Runtime.getRuntime();
+        int tamanho = 500_000_000;
 
         // Usando array com primitivos
         BoxingPerformanceTest.pressToContinue("Pressione ENTER para CONTINUAR...");
+        Runtime runtime = Runtime.getRuntime();
         long startTime = System.nanoTime();
         int[] array = new int[tamanho];
         long memAntesArray = runtime.totalMemory() - runtime.freeMemory();
